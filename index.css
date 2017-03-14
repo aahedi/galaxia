@@ -1,0 +1,79 @@
+
+header{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: black;
+    color:  whitesmoke;
+}
+#container{
+    width: 100%;
+    height: 100%;
+}
+canvas{
+    position: absolute;
+    left: 30%;
+    border: 1px solid grey;
+}
+.upload{
+    position: absolute;
+    left: 20px;
+    bottom: 35px;
+}
+.slider{
+    position: absolute;
+    left: 35%;
+    bottom:35px;
+}
+.effects{
+    position: absolute;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+.effects img{
+    padding: 2%;
+}
+#save{
+        position: absolute;
+        right: 25%;
+        bottom:10%;
+    }
+
+@media only screen and (max-width: 500px) {
+    canvas{
+        position: absolute;
+        left: 0;
+        border: 1px solid grey;
+    }
+    .upload{
+        position: absolute;
+        width:25%;
+        left: 5px;
+        bottom:20%;
+    }
+    .slider{
+        position: absolute;
+        left: 35%;
+        bottom:20%;
+    }
+    .effects{
+        float: left;
+        display: flex;
+        flex-direction: row;
+        bottom:3%;
+        width: 100%;
+        overflow-x:scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .effects img{
+        padding: 1%;
+    }
+    #save{
+        position: absolute;
+        right: 15%;
+        bottom:20%;
+    }
+}
